@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        // Use JitPack if you need artifacts hosted there:
+        maven { url 'https://jitpack.io' }
+        // Note: jcenter() is deprecated and removed on newer Gradle versions.
+        // If an artifact truly is only on jcenter (rare), you can add:
+        // maven { url "https://jcenter.bintray.com/" }
+        // but this is not recommended as a long-term solution.
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        // maven { url "https://jcenter.bintray.com/" } // only if absolutely required
+    }
+}
+
+rootProject.name = "PoseExercise"
+include ':app'
+
